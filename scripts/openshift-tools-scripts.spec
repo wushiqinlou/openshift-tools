@@ -1,6 +1,6 @@
 Summary:       OpenShift Tools Scripts
 Name:          openshift-tools-scripts
-Version:       0.1.7
+Version:       0.1.8
 Release:       1%{?dist}
 License:       ASL 2.0
 URL:           https://github.com/openshift/openshift-tools
@@ -366,6 +366,24 @@ OpenShift Tools IAM specific scripts
 %{python_sitelib}/openshift_tools/saml_aws_creds*
 
 %changelog
+* Fri Dec 30 2016 Unknown name 0.1.8-1
+- added ca-central-1 (mwoodson@redhat.com)
+- Add tags to ops-metric-client cli (zgalor@redhat.com)
+- Add ops-metric-client cli (zgalor@redhat.com)
+- Fix busted merge. Demerits to me (joesmith@redhat.com)
+- Automatic commit of package [openshift-tools-scripts] release [0.0.176-1].
+  (whearn@redhat.com)
+- Add MetricSender to monitoring lib (zgalor@redhat.com)
+- Add a hawkular configuration, client and sender classes to the monitoring lib
+  (kobi.zamir@gmail.com)
+- Automatic commit of package [openshift-tools-scripts] release [0.0.122-1].
+  (whearn@redhat.com)
+- Automatic commit of package [openshift-tools-scripts] release [0.0.119-1].
+  (bshpurke@redhat.com)
+- Illiminated unnecessary for loop (benpack101@gmail.com)
+- Fixed pylint issues (benpack101@gmail.com)
+- Added check for nodes without labels (bshpurke@redhat.com)
+
 * Wed Dec 14 2016 Drew Anderson <dranders@redhat.com> 0.1.7-1
 - change the way we test for pods and pod status increase test duration by 50%%
   (dranders@redhat.com)
@@ -393,9 +411,6 @@ OpenShift Tools IAM specific scripts
 - Add cron-send-logging-checks to the rpm (whearn@redhat.com)
 - increase to 15m (dranders@redhat.com)
 - Fix return code getting overwritten (whearn@redhat.com)
-
-* Thu Dec 01 2016 Joel Smith <joesmith@redhat.com> 0.1.0-1
-- Version bump
 
 * Mon Dec 05 2016 Wesley Hearn <whearn@redhat.com> 0.0.176-1
 - Add cron-send-logging-checks to the rpm (whearn@redhat.com)
